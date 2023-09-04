@@ -7,4 +7,6 @@
 который получаем от функции, в консоль.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const thirdDegree = (number) => Math.pow(number, 3);
+const inputUser = Number(prompt("Введите число"));
+console.log(inputUser ? thirdDegree(inputUser) : "Неизвестное число");

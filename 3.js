@@ -10,4 +10,23 @@
 три числа. Проверять их не нужно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const inputNumberOne = Number(prompt("Введите 1-е число"));
+const inputNumberTwo = Number(prompt("Введите 2-е число"));
+const inputNumberThree = Number(prompt("Введите 3-е число"));
+
+function findMaxNumber(inputNumberOne, inputNumberTwo, inputNumberThree) {
+    let max = inputNumberOne;
+    if (max <= inputNumberTwo) {
+        max = inputNumberTwo;
+    }
+    if (max <= inputNumberThree) {
+        max = inputNumberThree;
+    }
+    return Number(max);
+}
+
+const maxNumber = findMaxNumber(inputNumberOne, inputNumberTwo, inputNumberThree);
+
+console.log(`Максимальное значение среди чисел 
+            ${inputNumberOne}, ${inputNumberTwo}, ${inputNumberThree} равно 
+            ${maxNumber}`);
