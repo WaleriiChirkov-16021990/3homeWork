@@ -18,4 +18,24 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 Демонстрировать работы функций не обязательно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const sum = (numberOne, numberTwo) => {
+    return Number(numberOne + numberTwo);
+}
+const subtraction = (numberOne, numberTwo) => {
+    if (numberOne > numberTwo) {
+        return Number(numberOne - numberTwo);
+    }
+    return Number(numberTwo - numberOne);
+}
+const multiply = (numberOne, numberTwo) => {
+    return Number(numberOne * numberTwo);
+}
+const division = (numberOne, numberTwo) => {
+    return Number(numberOne / numberTwo);
+}
+
+
+console.log(sum(3, 2));
+console.log(subtraction(3, 2));
+console.log(multiply(3, 2));
+console.log(division(3, 3));

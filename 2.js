@@ -9,4 +9,7 @@
 сообщение "Размер заработной платы за вычетом налогов равен N."
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const tax = (number) => number * 0.77;
+const inputUserSalary = Number(prompt("Enter a digits:"));
+console.log(inputUserSalary ? `Размер заработной платы за вычетом налогов равен ${tax(inputUserSalary)}.` : 'Значение задано неверно')
+
